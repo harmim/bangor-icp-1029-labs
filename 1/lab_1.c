@@ -1,6 +1,6 @@
 /**
  * @author Dominik Harmim <harmim6@gmail.com>
-*/
+ */
 
 
 #include <stdlib.h>
