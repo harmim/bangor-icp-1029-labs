@@ -1,0 +1,14 @@
+# Author: Dominik Harmim <xharmi00@stud.fit.vutbr.cz>
+
+CMAKE_MINIMUM_REQUIRED(VERSION 3.7)
+
+SET(CMAKE_C_COMPILER gcc)
+SET(CMAKE_C_FLAGS "-std=c99 -Wall -Wextra -Werror -g")
+
+PROJECT(lab)
+SET(WORKING_DIR 1)
+
+FILE(GLOB SOURCES "${WORKING_DIR}/*.c")
+FILE(GLOB HEADERS "${WORKING_DIR}/*.h")
+
+ADD_EXECUTABLE(${PROJECT_NAME} ${SOURCES} ${HEADERS})
