@@ -1,4 +1,4 @@
-# Author: Dominik Harmim <xharmi00@stud.fit.vutbr.cz>
+# Author: Dominik Harmim <harmim6@gmail.com>
 
 CMAKE_MINIMUM_REQUIRED(VERSION 3.7)
 
