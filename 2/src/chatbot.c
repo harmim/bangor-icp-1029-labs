@@ -24,7 +24,7 @@ int main()
 		"------------\n"
 		"I am a chatbot\n"
 		"You are a human\n"
-		"I have five quiestions for you!\n";
+		"I have five questions for you!\n";
 	printf("%s\n", welcome_message);
 
 
@@ -50,13 +50,13 @@ int main()
 	printf("How tall are you in centimeters? ");
 	scanf("%f", &height_cm);
 
-	// fiveth question - weight
+	// fifth question - weight
 	float weight_kg;
 	printf("What is your weight in kilograms? ");
 	scanf("%f", &weight_kg);
 
 
-	/// Priting and calculating deductions and conversions
+	/// Printing and calculating deductions and conversions
 
 	printf("\n");
 

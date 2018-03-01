@@ -88,7 +88,7 @@ void scramble()
 void unscramble()
 {
 	// gets string (max 255 chars) from stdin
-	printf("Please enter your scrumbled string: ");
+	printf("Please enter your scrambled string: ");
 	char string[256];
 	fgets(string, 256, stdin);
 
@@ -140,7 +140,7 @@ int main()
 		"Enter choice: "
 	);
 
-	// choice processing (Scramble or Unsramble)
+	// choice processing (Scramble or Unscramble)
 	int choice;
 	scanf("%d", &choice);
 	getchar();

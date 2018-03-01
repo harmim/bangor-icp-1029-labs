@@ -19,7 +19,7 @@ int main()
 		printf(
 			"     Main menu     \n\n"
 			"1. Single Player\n"
-			"2. Multiplayer\n"
+			"2. Multi-player\n"
 			"3. Options\n"
 			"4. Credits\n"
 			"5. Quit\n\n"
@@ -35,7 +35,7 @@ int main()
 				break;
 
 			case 2:
-				printf("\nMultiplayer!\n");
+				printf("\nMulti-player!\n");
 				break;
 
 			case 3:
@@ -51,7 +51,7 @@ int main()
 				break;
 
 			default:
-				printf("Unknow choice entered.\n");
+				printf("Unknown choice entered.\n");
 				return EXIT_FAILURE;
 		}
 

@@ -58,7 +58,7 @@ int main()
 {
 	printf(
 		"--------------\n"
-		"Mass Convertor\n"
+		"Mass Converter\n"
 		"--------------\n"
 	);
 
