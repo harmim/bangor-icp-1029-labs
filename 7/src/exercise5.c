@@ -11,6 +11,22 @@
 
 
 /**
+ * Frees an matrix of given rows.
+ *
+ * @param matrix matrix to be freed
+ * @param rows number of rows
+ */
+void free_matrix(int **matrix, int rows)
+{
+	for (int i = 0; i < rows; i++)
+	{
+		free(matrix[i]);
+	}
+	free(matrix);
+}
+
+
+/**
  * Dynamically creates and initialises an array of size rows * cols (matrix), returns a pointer to the matrix
  * or NULL in case of error allocation.
  *
@@ -33,12 +49,7 @@ int **create_matrix(int rows, int cols)
 		if (!(matrix[i] = (int *) malloc(cols * sizeof(int))))
 		{
 			// in case of error deallocates all already allocated memory
-			for (int j = 0; j < i; j++)
-			{
-				free(matrix[j]);
-			}
-			free(matrix);
-
+			free_matrix(matrix, i);
 			return NULL;
 		}
 
@@ -50,22 +61,6 @@ int **create_matrix(int rows, int cols)
 	}
 
 	return matrix;
-}
-
-
-/**
- * Frees an matrix of given rows.
- *
- * @param matrix matrix to be freed
- * @param rows number of rows
- */
-void free_matrix(int **matrix, int rows)
-{
-	for (int i = 0; i < rows; i++)
-	{
-		free(matrix[i]);
-	}
-	free(matrix);
 }
 
 
