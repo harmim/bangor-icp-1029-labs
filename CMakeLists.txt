@@ -8,7 +8,7 @@ SET(CMAKE_C_FLAGS "-std=c11 -Wall -Wextra -Werror -pedantic -g")
 
 PROJECT(lab)
 
-SET(WORKING_DIR 9/src)
-SET(SOURCES "${WORKING_DIR}/exercise5.c")
+SET(WORKING_DIR 10/src)
+SET(SOURCES "${WORKING_DIR}/exercise1.c")
 
 ADD_EXECUTABLE(${PROJECT_NAME} ${SOURCES})
