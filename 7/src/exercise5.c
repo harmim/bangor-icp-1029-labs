@@ -43,7 +43,7 @@ int **create_matrix(int rows, int cols)
 		return NULL;
 	}
 
-	// allocates memory for particular cloumn values
+	// allocates memory for particular column values
 	for (int i = 0; i < rows; i++)
 	{
 		if (!(matrix[i] = (int *) malloc(cols * sizeof(int))))
